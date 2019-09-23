@@ -17,6 +17,6 @@ public class Perro extends Animal{
     }
 
     public String ruido(){
-        return "Guau Guau";
+        return "El Perro hace Gua Guau";
     }
 }

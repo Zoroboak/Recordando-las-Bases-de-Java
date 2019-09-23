@@ -18,7 +18,7 @@ public class Gato extends Animal{
 
     @Override 
     public String ruido(){
-        return "Miau Miau";
+        return "El gato hace Miau Miau";
     }
     
 }

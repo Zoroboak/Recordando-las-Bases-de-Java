@@ -3,21 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ClaseAbstracta;
+package Exepciones;
 
 /**
  *
  * @author Pedro Pérez
  */
-public class Oveja extends Animal{
-    
-    public Oveja() {
-        nombre = "Oveja";
-        peso = 3.4;
+public class BadPostCodeException extends Exception{
+
+    public BadPostCodeException(String message) {
+        super(message);
     }
 
-    @Override
-    public String ruido(){
-        return "La oveja hace Bala Bala";
-    }
+    
+    
+    
 }

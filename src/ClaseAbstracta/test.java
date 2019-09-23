@@ -18,12 +18,15 @@ public class test {
         
         ArrayList<Animal> listaAnimales = new ArrayList<>();
         
-        listaAnimales.get(0).getNombre();
+        listaAnimales.add(new Gato());
+        listaAnimales.add(new Oveja());
+        listaAnimales.add(new Perro());
         
         Iterator it = listaAnimales.iterator();
         
         while(it.hasNext()){
-            System.out.println("El "+it.next().getClass().getSimpleName()+" "+it.next().getNombre());
+            Animal aux = (Animal) it.next();
+            System.out.println(aux.ruido());
         }
         
         
