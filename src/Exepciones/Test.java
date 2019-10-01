@@ -23,13 +23,14 @@ public class Test {
         
         try {
             trabajo.setCodigoPostal(codigoPostal);
+            System.out.println("Codigo Postal Correcto");
             
         } catch (BadPostCodeException e) {
-            System.out.println("Error: "+e.getMessage());
+            System.out.println("Exepción: "+e.getMessage());
         }
         
         System.out.println("");
-        System.out.println("Fin");
+        System.out.println("Fin del programa :D");
         
         
     }

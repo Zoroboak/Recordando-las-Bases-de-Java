@@ -37,8 +37,8 @@ public class Direccion {
 
     public void setCodigoPostal(int codigoPostal) throws BadPostCodeException{
         
-        if (codigoPostal<10000) {
-            throw new BadPostCodeException("El código postal debe tener al menos 5 dígitos");
+        if ((codigoPostal<10000)||(codigoPostal>99999)) {
+            throw new BadPostCodeException("El código postal debe tener 5 dígitos");
         }
         
         this.codigoPostal = codigoPostal;
